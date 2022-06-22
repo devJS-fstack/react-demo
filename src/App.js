@@ -50,14 +50,23 @@ function App() {
   const handleSubmit = () => {
     console.log(itemChecked)
   }
+
+  const handleOnChange = (id) => {
+    const isChecked = itemChecked.includes(id)
+    if (isChecked) {
+      setItemChecked(itemChecked.filter(item => item !== id))
+    } else {
+      setItemChecked([...itemChecked, id])
+    }
+  }
   return (
     <div className="app" style={{ padding: 32 }}>
       {courses.map(item => (
         <div key={item.id}>
           <input
             type="checkbox"
-            checked={item.id === itemChecked}
-            onChange={() => setItemChecked(item.id)}
+            checked={itemChecked.includes(item.id)}
+            onChange={() => handleOnChange(item.id)}
           /> {item.name}
         </div>
       ))}
