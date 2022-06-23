@@ -2,12 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import App_Todo from './script/App_Todo'
+import App_UseEffects from './script/App_UseEffects'
 import reportWebVitals from './reportWebVitals';
+
+
+// === Ex4(useEffect)
+
+function emitComment(id) {
+  setInterval(() => {
+    window.dispatchEvent(
+      new CustomEvent(`lesson-${id}`, {
+        detail: id,
+      })
+    )
+  }, 2000)
+}
+
+emitComment(1)
+emitComment(2)
+emitComment(3)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App_UseEffects />
   </React.StrictMode>
 );
 
