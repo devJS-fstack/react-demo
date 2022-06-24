@@ -6,6 +6,7 @@ import App_Todo from './script/App_Todo'
 import App_UseEffects from './script/App_UseEffects'
 import App_UseRef from './script/App_UseRef'
 import App_UseCallback from './script/App_UseCallback'
+import App_UseMemo from './script/App_UseMemo'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -28,7 +29,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App_UseCallback />
+    <App_UseMemo />
   </React.StrictMode>
 );
 
