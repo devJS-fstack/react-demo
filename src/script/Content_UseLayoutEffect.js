@@ -17,7 +17,7 @@ function Content_UseLayoutEffect() {
     //     if (counter > 3) setCounter(0)
     // }, [counter])
 
-    // Case use useLayoutEffect
+    // Case use useLayoutEffect ==> callback ==> render UI
 
     useLayoutEffect(() => {
         if (counter > 3) setCounter(0)
