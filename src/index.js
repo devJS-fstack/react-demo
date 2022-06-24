@@ -4,29 +4,31 @@ import './index.css';
 import App from './App';
 import App_Todo from './script/App_Todo'
 import App_UseEffects from './script/App_UseEffects'
+import App_UseRef from './script/App_UseRef'
+import App_UseCallback from './script/App_UseCallback'
 import reportWebVitals from './reportWebVitals';
 
 
 // === Ex4(useEffect)
 
-function emitComment(id) {
-  setInterval(() => {
-    window.dispatchEvent(
-      new CustomEvent(`lesson-${id}`, {
-        detail: id,
-      })
-    )
-  }, 2000)
-}
+// function emitComment(id) {
+//   setInterval(() => {
+//     window.dispatchEvent(
+//       new CustomEvent(`lesson-${id}`, {
+//         detail: id,
+//       })
+//     )
+//   }, 2000)
+// }
 
-emitComment(1)
-emitComment(2)
-emitComment(3)
+// emitComment(1)
+// emitComment(2)
+// emitComment(3)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App_UseEffects />
+    <App_UseCallback />
   </React.StrictMode>
 );
 
