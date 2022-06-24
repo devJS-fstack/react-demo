@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import App_Todo from './script/App_Todo'
-import App_UseEffects from './script/App_UseEffects'
-import App_UseRef from './script/App_UseRef'
-import App_UseCallback from './script/App_UseCallback'
-import App_UseMemo from './script/App_UseMemo'
-import App_UseReducer from './script/App_UseReducer'
+// import App from './script/App_UseState';
+// import App_Todo from './script/App_Todo'
+// import App_UseEffects from './script/App_UseEffects'
+// import App_UseRef from './script/App_UseRef'
+// import App_UseCallback from './script/App_UseCallback'
+// import App_UseMemo from './script/App_UseMemo'
+// import App_UseReducer from './script/App_UseReducer'
 import reportWebVitals from './reportWebVitals';
-
+import ThemeProvider from './script/Theme_UseContext/Theme_Context'
+import App from './script/Theme_UseContext/App'
 
 // === Ex4(useEffect)
 
@@ -30,7 +31,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App_UseReducer />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
