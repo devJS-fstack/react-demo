@@ -7,6 +7,7 @@ import App_UseEffects from './script/App_UseEffects'
 import App_UseRef from './script/App_UseRef'
 import App_UseCallback from './script/App_UseCallback'
 import App_UseMemo from './script/App_UseMemo'
+import App_UseReducer from './script/App_UseReducer'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -29,7 +30,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App_UseMemo />
+    <App_UseReducer />
   </React.StrictMode>
 );
 
