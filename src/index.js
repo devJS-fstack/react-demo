@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 // import App from './script/App_UseState';
 // import App_Todo from './script/App_Todo'
@@ -15,7 +16,8 @@ import reportWebVitals from './reportWebVitals';
 
 // import { StoreProvider } from './script/store'
 
-import App from './script/Imperative/App'
+// import App from './script/Imperative/App'
+import App from './script/pages/App'
 
 // === Ex4(useEffect)
 
@@ -39,7 +41,9 @@ root.render(
     {/* <StoreProvider>
       <App />
     </StoreProvider> */}
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

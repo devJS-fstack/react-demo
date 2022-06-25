@@ -20,6 +20,7 @@ function Video(props, ref) {
             height="600px"
             ref={videoRef}
             src={ylangylang}
+            controls
         />
     )
 }
