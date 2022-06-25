@@ -9,8 +9,11 @@ import './index.css';
 // import App_UseMemo from './script/App_UseMemo'
 // import App_UseReducer from './script/App_UseReducer'
 import reportWebVitals from './reportWebVitals';
-import ThemeProvider from './script/Theme_UseContext/Theme_Context'
-import App from './script/Theme_UseContext/App'
+// import ThemeProvider from './script/Theme_UseContext/Theme_Context'
+// import App from './script/Theme_UseContext/App'
+import App from './script/AppGlobal'
+
+import { StoreProvider } from './script/store'
 
 // === Ex4(useEffect)
 
@@ -31,9 +34,9 @@ import App from './script/Theme_UseContext/App'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <StoreProvider>
       <App />
-    </ThemeProvider>
+    </StoreProvider>
   </React.StrictMode>
 );
 
