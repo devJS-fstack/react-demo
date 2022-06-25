@@ -11,9 +11,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import ThemeProvider from './script/Theme_UseContext/Theme_Context'
 // import App from './script/Theme_UseContext/App'
-import App from './script/AppGlobal'
+// import App from './script/AppGlobal'
 
-import { StoreProvider } from './script/store'
+// import { StoreProvider } from './script/store'
+
+import App from './script/Imperative/App'
 
 // === Ex4(useEffect)
 
@@ -34,9 +36,10 @@ import { StoreProvider } from './script/store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StoreProvider>
+    {/* <StoreProvider>
       <App />
-    </StoreProvider>
+    </StoreProvider> */}
+    <App />
   </React.StrictMode>
 );
 
